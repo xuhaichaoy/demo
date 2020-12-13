@@ -3,7 +3,8 @@ import lazy from '../../../config/lazy'
 // import { List, Card, Divider, Icon, Tag } from "antd";
 import { withRouter } from "react-router-dom";
 // import api from '../../config/http';
-import { DatePicker } from 'antd-mobile';
+// import { DatePicker } from 'antd-mobile';
+import { Button } from 'antd-mobile';
 import "./home.css";
 
 // const Anchor = lazy(() => import('../anchor/anchor'))
@@ -26,12 +27,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="mainPage">
-        <div className="mainContent">
-            
-        </div>
-        
-      </div>
+        <Button>Start</Button>
     );
   }
 }
