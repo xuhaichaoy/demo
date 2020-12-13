@@ -1,0 +1,20 @@
+.am-search {
+    background: white;
+    // #efeff4
+    .am-search-input {
+        background: #efeff4;
+        border-radius: 14px;
+    }
+}
+.tabsIndex {
+    background: white;
+    
+    .am-tabs-tab-bar-wrap {
+        // padding-left: 40px;
+        // padding-right: 40px;
+    }
+
+    .tabItem {
+        min-height: calc(100vh - 87.5px)!important;
+    }
+}
