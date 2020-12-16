@@ -1,20 +1,145 @@
 .am-search {
     background: white;
+
     // #efeff4
     .am-search-input {
         background: #efeff4;
         border-radius: 14px;
     }
 }
+
 .tabsIndex {
     background: white;
-    
+
     .am-tabs-tab-bar-wrap {
         // padding-left: 40px;
         // padding-right: 40px;
     }
 
     .tabItem {
-        min-height: calc(100vh - 87.5px)!important;
+        height: auto !important;
+        background: #ccc;
+        
+
+        // min-height: calc(100vh - 87.5px)!important;
+        .am-pull-to-refresh {
+            width: 100%;
+        }
+
+        .cardItem {
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+
+            .cardTopBox {
+
+                .cardImg {
+                    display: flex;
+                    position: relative;
+
+                    img {
+                        display: block;
+                        width: 38px;
+                        border-radius: 38px;
+                    }
+
+                    .cardNameBox {
+                        text-align: left;
+                        margin-left: 10px;
+
+                        .cardName {
+                            margin-top: 4px;
+                            font-size: 14px;
+                        }
+
+                        .cardSchool {
+                            color: #9FA1A5;
+                            margin-top: 6px;
+                            font-size: 12px;
+                        }
+                    }
+
+                    .collectBtn {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+            }
+
+            .cardContent {
+                margin-top: 12px;
+                margin-bottom: 12px;
+
+                .cardWords {
+                    text-align: left;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.4px;
+                    color: #2E2F31;
+                }
+
+                .cardContentImgBox {
+                    margin-top: 26px;
+                    display: flex;
+
+                    .cardContentImgItem {
+                        border-radius: 8px;
+                        max-width: 100px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .cardBtnsBox {
+                margin-top: 20px;
+                padding-left: 10px;
+                padding-right: 50px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: space-between;
+
+                .cardBtnsItem {
+                    font-size: 0;
+
+                    i {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    .zan {
+                        background: url(../../../static/img/zan.png);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                    }
+
+                    .comment {
+                        background: url(../../../static/img/comment.png);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                    }
+
+                    .face {
+                        background: url(../../../static/img/face.png);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                    }
+
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 14px;
+                        margin-left: 8px;
+                        color: #9597A8;
+                    }
+                }
+            }
+        }
+
+
     }
 }
