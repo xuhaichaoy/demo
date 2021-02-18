@@ -80,8 +80,8 @@
                     .cardWords {
                         text-align: left;
                         font-size: 14px;
-                        line-height: 20px;
-                        letter-spacing: 0.4px;
+                        line-height: 24px;
+                        letter-spacing: 1px;
                         color: #2E2F31;
                     }
 
@@ -94,13 +94,16 @@
                             max-width: 100px;
                             margin-right: 10px;
                         }
+                        .cardContentImgItem:nth-child(3n){
+                            margin-right: 0;
+                        }
                     }
                 }
 
                 .cardBtnsBox {
                     margin-top: 20px;
                     padding-left: 10px;
-                    padding-right: 50px;
+                    padding-right: 24px;
                     box-sizing: border-box;
                     display: flex;
                     justify-content: space-between;
@@ -111,8 +114,8 @@
                         i {
                             display: inline-block;
                             vertical-align: middle;
-                            width: 18px;
-                            height: 18px;
+                            width: 16px;
+                            height: 16px;
                         }
 
                         .zan {
@@ -198,6 +201,7 @@
                 .attentionListTips {
                     display: flex;
                     justify-content: space-between;
+                    margin-bottom: 20px;
 
                     .attentTips {
 
@@ -212,6 +216,10 @@
                             
                         }
                     }
+                }
+
+                .attentionListItem {
+                    margin-top: 10px;
                 }
             }
         }

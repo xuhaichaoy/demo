@@ -1,0 +1,135 @@
+@charset "UTF-8";
+.am-search {
+  background: white;
+}
+
+.am-search .am-search-input {
+  background: #efeff4;
+  border-radius: 14px;
+}
+
+.detailIndex {
+  background: white;
+}
+
+.detailIndex .am-navbar {
+  border-bottom: 0.5px solid #eee;
+}
+
+.detailIndex .detailContent {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: white;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+.detailIndex .detailContent .detailText {
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #2E2F31;
+}
+
+.detailIndex .detailContent .detailImgs {
+  margin-top: 26px;
+  display: flex;
+}
+
+.detailIndex .detailContent .detailImgs .detailImgItem {
+  border-radius: 8px;
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 10px;
+}
+
+.detailIndex .detailContent .detailImgs .cardContentImgItem:nth-child(3n) {
+  margin-right: 0;
+}
+
+.detailIndex .am-tabs-default-bar-tab {
+  font-size: 13px;
+}
+
+.detailIndex .bottomTips {
+  border-top: 0.5px solid #eee;
+  box-sizing: border-box;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.detailIndex .bottomTips .bottomReply {
+  display: none;
+}
+
+.detailIndex .bottomTips .bottomReplyHidden {
+  width: 120px;
+  height: 30px;
+  border: 1px solid #eee;
+  line-height: 30px;
+  border-radius: 15px;
+  font-size: 0;
+}
+
+.detailIndex .bottomTips .bottomReplyHidden .replyHiddenIcon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background: url(../../../static/img/回复.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.detailIndex .bottomTips .bottomReplyHidden span {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #0d0d0e;
+}
+
+.detailIndex .bottomTips .bottomItem {
+  margin-left: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.detailIndex .bottomTips .bottomLike {
+  width: 20px;
+  height: 20px;
+  background: url(../../../static/img/zan.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.detailIndex .bottomTips .bottomForward {
+  width: 20px;
+  height: 20px;
+  background: url(../../../static/img/转发.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.detailIndex .bottomTips .bottomFav {
+  width: 20px;
+  height: 20px;
+  background: url(../../../static/img/未收藏.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

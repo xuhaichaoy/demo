@@ -71,6 +71,7 @@ class TabExample extends React.Component {
               damping={60}
               ref={el => this.ptr = el}
               style={{
+                minHeight: this.state.height,
                 height: this.state.height,
                 overflow: 'auto',
               }}
@@ -92,10 +93,10 @@ class TabExample extends React.Component {
                     </div>
                     <div className="attentionTips">
                       当前还没有关注的相关内容号、圈子等
-                </div>
+                    </div>
                     <div className="addAttentionBtn">
                       添加关注
-                </div>
+                    </div>
                   </div>
                 </div>
 
@@ -126,6 +127,7 @@ class TabExample extends React.Component {
               ref={el => this.ptr = el}
               style={{
                 minHeight: this.state.height,
+                height: this.state.height,
                 overflow: 'auto',
               }}
               indicator={this.state.down ? {} : { deactivate: '上拉可以刷新' }}
