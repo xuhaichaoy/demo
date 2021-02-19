@@ -6,7 +6,8 @@ import { withRouter } from "react-router-dom";
 import "./detail.css";
 
 import { NavBar, Tabs, WhiteSpace, Badge, Icon } from 'antd-mobile';
-import Textarea from '../../../component/common/textarea/textarea'
+import Textarea from '../../../component/common/textarea/textarea';
+import Comment from '../../../component/common/comment/comment';
 
 
 const tabs = [
@@ -33,22 +34,22 @@ class TabExample extends React.Component {
     render() {
         return (
             <Tabs tabs={tabs}
-                initialPage={1}
+                initialPage={0}
                 onChange={(tab, index) => { console.log('onChange', index, tab); }}
                 onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
             >
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                    Content of first tab
-                    </div>
+                <div style={{ display: 'block', backgroundColor: '#fff' }}>
+                    <Comment />
+                </div>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
                     Content of second tab
-                    </div>
+                </div>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
                     Content of third tab
-                    </div>
+                </div>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
                     Content of fourth tab
-                    </div>
+                </div>
             </Tabs>
         )
     }
@@ -100,7 +101,8 @@ class App extends React.Component {
                         icon={<Icon type="left" />}
                         onLeftClick={() => console.log('onLeftClick')}
                         rightContent={[
-                            <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
+                            <span key="0" style={{ marginRight: '16px' }}>关注</span>,
+                            // <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
                             <Icon key="1" type="ellipsis" />,
                         ]}
                     >Detail详情页</NavBar>
@@ -121,7 +123,7 @@ class App extends React.Component {
                     </div>
                     <WhiteSpace />
                     <TabExample />
-                    <WhiteSpace />
+                    {/* <WhiteSpace /> */}
                     <div className="bottomTipsHidden">
                     </div>
                     <div className="bottomTips">

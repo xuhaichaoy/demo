@@ -1,0 +1,133 @@
+.CommentBox {
+    .MainComment {
+        width: 100%;
+        padding-top: 6px;
+        display: flex;
+        justify-content: start;
+        .MainUserImage {
+            .userImage {
+                display: block;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                
+            }
+        }
+
+        .MainConnent{
+            width: calc(100% - 55px);
+            margin-left: 10px;
+            .MainUserName {
+                color: #595959;
+                font-size: 14px;
+            }
+
+            .MainSendTime {
+                color: #595959;
+                font-size: 12px;
+            }
+
+            .MainCommentContent {
+                margin-top: 4px;
+                border: 0.5px solid #eee;
+                padding: 10px;
+                border-radius: 6px;
+                white-space: break-spaces;
+                font-size: 14px;
+            }
+
+            .MainCommentBottom {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                height: 20px;
+                line-height: 20px;
+                position: relative;
+
+                .MainCommentCampus {
+                    font-size: 12px;
+                    color: #8c8c8c;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+
+                .MainCommentZan {
+                    i {
+                        margin-left: 20px;
+                        background: url(../../../static/img/zan.png);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 15px;
+                        margin-left: 4px;
+                        color: #bfbfbf;
+                    }
+                   
+                }
+
+                .MainCommentReply {
+                    i {
+                        margin-left: 20px;
+                        background: url(../../../static/img/回复.png);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+
+                .MainCommentMore {
+                    i {
+                        margin-left: 20px;
+                        background: url(../../../static/img/更_多.png);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .MainCommentItem {
+                padding: 10px;
+                // border: 0.5px solid #eee;
+                background: #eee;
+                border-radius: 6px;
+                overflow: hidden;
+                // width: 100%;
+                .CommentItemnent {
+                    font-size: 0;
+                    wo
+                    overflow: hidden;
+                    .commentItemUser {
+                        color: #8c8c8c;
+                        font-size: 12px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+
+                    .commentItemcomment {
+                        font-size: 12px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        
+                    }
+                }
+            }
+        }
+
+    }
+}
