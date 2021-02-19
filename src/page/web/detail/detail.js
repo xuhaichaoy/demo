@@ -8,6 +8,7 @@ import "./detail.css";
 import { NavBar, Tabs, WhiteSpace, Badge, Icon } from 'antd-mobile';
 import Textarea from '../../../component/common/textarea/textarea';
 import Comment from '../../../component/common/comment/comment';
+import Like from '../../../component/common/like/like';
 
 
 const tabs = [
@@ -34,15 +35,15 @@ class TabExample extends React.Component {
     render() {
         return (
             <Tabs tabs={tabs}
-                initialPage={0}
+                initialPage={1}
                 onChange={(tab, index) => { console.log('onChange', index, tab); }}
                 onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
             >
                 <div style={{ display: 'block', backgroundColor: '#fff' }}>
                     <Comment />
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                    Content of second tab
+                <div style={{ display: 'block', backgroundColor: '#fff' }}>
+                    <Like />
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
                     Content of third tab

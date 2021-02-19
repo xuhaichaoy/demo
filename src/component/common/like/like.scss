@@ -1,0 +1,32 @@
+.likeBox {
+    .likeBoxItem {
+        width: 100%;
+        margin-bottom: 6px;
+        padding-top: 6px;
+        display: flex;
+        justify-content: start;
+        .likeImage {
+            .likeUserImage {
+                display: block;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                
+            }
+        }
+
+        .likeConnent {
+            width: calc(100% - 55px);
+            margin-left: 10px;
+            .likeUserName {
+                color: #595959;
+                font-size: 14px;
+            }
+
+            .likeUserTime {
+                color: #595959;
+                font-size: 12px;
+            }
+        }
+    }
+}

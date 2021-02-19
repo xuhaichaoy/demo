@@ -15,7 +15,7 @@ class TextareaItemExample extends React.Component {
                             // initialValue: '',
                         })}
                         placeholder="说点什么呢..."
-                        rows={5}
+                        rows={3}
                         count={120}
                         className = "textarea"
                     />
