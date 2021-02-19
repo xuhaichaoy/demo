@@ -54,6 +54,7 @@
                 }
 
                 .MainCommentZan {
+                    font-size: 0;
                     i {
                         margin-left: 20px;
                         background: url(../../../static/img/zan.png);
@@ -103,15 +104,17 @@
 
             .MainCommentItem {
                 padding: 10px;
+                margin-bottom: 10px;
                 // border: 0.5px solid #eee;
                 background: #eee;
                 border-radius: 6px;
-                overflow: hidden;
+                // overflow: hidden;
                 // width: 100%;
                 .CommentItemnent {
                     font-size: 0;
-                    wo
                     overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                     .commentItemUser {
                         color: #8c8c8c;
                         font-size: 12px;

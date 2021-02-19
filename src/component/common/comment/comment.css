@@ -55,6 +55,10 @@
   top: 0;
 }
 
+.CommentBox .MainComment .MainConnent .MainCommentBottom .MainCommentZan {
+  font-size: 0;
+}
+
 .CommentBox .MainComment .MainConnent .MainCommentBottom .MainCommentZan i {
   margin-left: 20px;
   background: url(../../../static/img/zan.png);
@@ -98,14 +102,16 @@
 
 .CommentBox .MainComment .MainConnent .MainCommentItem {
   padding: 10px;
+  margin-bottom: 10px;
   background: #eee;
   border-radius: 6px;
-  overflow: hidden;
 }
 
 .CommentBox .MainComment .MainConnent .MainCommentItem .CommentItemnent {
   font-size: 0;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .CommentBox .MainComment .MainConnent .MainCommentItem .CommentItemnent .commentItemUser {
