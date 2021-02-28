@@ -5,9 +5,15 @@ import { withRouter } from "react-router-dom";
 import CircleItem from '../../../component/common/circleItem/circleItem';
 // import api from '../../config/http';
 // import { DatePicker } from 'antd-mobile';
-import "./allcircle.css";
+import "./managecircle.css";
 
-import { SearchBar, Button, WingBlank, WhiteSpace, Badge, PullToRefresh, Icon } from 'antd-mobile';
+import { SearchBar, Tabs, Button, WingBlank, WhiteSpace, Badge, PullToRefresh, Icon } from 'antd-mobile';
+
+const tabs = [
+    { title: <Badge>圈子</Badge> },
+    { title: <Badge>发布</Badge> },
+    { title: <Badge>回复</Badge> },
+];
 
 
 class Search extends React.Component {
@@ -72,8 +78,29 @@ class TabExample extends React.Component {
                         }, 1000);
                     }}
                 >
+                    <Tabs tabs={tabs}
+                        initialPage={1}
+                        onChange={(tab, index) => { console.log('onChange', index, tab); }}
+                        onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
+                    >
+                        <div style={{ display: 'block', backgroundColor: '#fff' }}>
+                            <CircleItem />
+                            <div>
+                                
+                            </div>
+                        </div>
+                        <div style={{ display: 'block', backgroundColor: '#fff' }}>
+                            <CircleItem />
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                            Content of third tab
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                            Content of fourth tab
+                        </div>
+                    </Tabs>
 
-                    <CircleItem />
+                    
                     
                   
                     
