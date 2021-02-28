@@ -49,7 +49,6 @@ class TabExample extends React.Component {
     componentDidMount() {
         const hei = this.state.height - 87.5;
 
-        console.log(hei, ReactDOM.findDOMNode(this.ptr).offsetTop, ReactDOM.findDOMNode(this.ptr))
         setTimeout(() => this.setState({
             height: hei,
             data: genData(),

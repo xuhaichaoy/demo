@@ -1,0 +1,93 @@
+.CircleDetail {
+    background: white;
+    padding-bottom: 20px;
+   
+    .detailBanner {
+        background: url(//pic.cgyouxi.com/orange/title/1612071289_9649.gif);
+        background-size: 100%;
+        width: 100%;
+        height: 212px;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .bannerShortIcon {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 20px;
+            bottom: 20px;
+
+            img {
+                width: 100%;
+                display: block;
+                border-radius: 6px;
+            }
+
+        }
+    }
+
+    .bannerIntro {
+        margin-top: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+
+        .bannerTopBox {
+            display: flex;
+            justify-content: space-between;
+            height: 24px;
+            line-height: 24px;
+            .bannerBoxName {
+                font-size: 18px;
+            }
+
+            .bannerBoxBtn{
+                font-size: 14px;
+                background: #3f6600;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-radius: 4px;
+                line-height: 16px;
+                color: white;
+            }
+        }
+
+        .bannerBoxTips {
+            margin-top: 8px;
+            .bannerInfor {
+                display: flex;
+                justify-content: left;
+                .inforSpan {
+                    margin-left: 10px;
+                    font-size: 0;
+                    color: #bfbfbf;
+                    span {
+                        font-size: 11px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    i{
+                        font-style: normal;
+                        font-size: 11px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+                .inforSpan:first-child {
+                    margin-left: 0;
+                }
+            }
+
+            .bannerIntroduce {
+                text-align: left;
+                margin-top: 6px;
+                color: #bfbfbf;
+                font-size: 11px;
+                line-height: 15px;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+}
