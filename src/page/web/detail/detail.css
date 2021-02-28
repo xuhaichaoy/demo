@@ -44,6 +44,48 @@ body {
   padding-right: 20px;
 }
 
+.detailIndex .detailContent .detailContentTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+  display: none;
+}
+
+.detailIndex .detailContent .detailContentUserBox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.detailIndex .detailContent .detailContentUserBox .detailUserImgs {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.detailIndex .detailContent .detailContentUserBox .detailUserImgs img {
+  display: block;
+  width: 100%;
+}
+
+.detailIndex .detailContent .detailContentUserBox .detailUserContent {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.detailIndex .detailContent .detailContentUserBox .detailUserContent .detailUserContentName {
+  font-size: 18px;
+  color: #1f1f1f;
+}
+
+.detailIndex .detailContent .detailContentUserBox .detailUserContent .detailUserTime {
+  font-size: 12px;
+  color: #bfbfbf;
+}
+
 .detailIndex .detailContent .detailText {
   text-align: left;
   font-size: 14px;

@@ -111,11 +111,27 @@ class App extends React.Component {
 
                     </div>
                     <div className="detailContent">
+                        <div className="detailContentTitle">
+                            标题u红红火火恍恍惚惚
+                        </div>
+                        <div className="detailContentUserBox">
+                            <div className="detailUserImgs">
+                                <img src= "//pic.cgyouxi.com/orange/upload/202102/79135432_724bf8b1a12cc605b504f9a34d4b2fbc.png!n300" />
+                            </div>
+                            <div className="detailUserContent">
+                                <div className="detailUserContentName">
+                                    namenamename
+                                </div>
+                                <div className="detailUserTime">
+                                    2021-02-28
+                                </div>
+                            </div>
+                        </div>
                         <div className="detailText">
                             唉，士大夫喀什地方骄傲撒大家看法哈桑雕刻技法合适的卡就发啊是大家看法第三方撒地方撒地方撒地方是的就
                             按时打卡激发函数的肌肤上的飞机哈士大夫喀什地方撒地方速度加快恢复咯技术的发上雕刻技法是大家看法和
                             困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了困了
-                    </div>
+                        </div>
                         <div className="detailImgs">
                             <img src="//pic.cgyouxi.com/orange/upload/202012/79031554_2fa4ff1e09657db2a72f3d4f3b2ef859.jpg!n300" className="detailImgItem" />
                             <img src="//pic.cgyouxi.com/orange/upload/202012/7545149_d2db5203a9b689fac7f25cbaa23b3040.png!n300" className="detailImgItem" />
