@@ -3,6 +3,7 @@ import lazy from '../../../config/lazy'
 import ReactDOM from 'react-dom';
 import { withRouter } from "react-router-dom";
 import Swiper from "swiper";
+import Circle from '../../../component/common/circle/circle';
 // import api from '../../config/http';
 // import { DatePicker } from 'antd-mobile';
 import "./circle.css";
@@ -170,102 +171,7 @@ class TabExample extends React.Component {
                         </div>
                     </div>
 
-                    <div className = "circleLatestBox">
-                        <div className = "circleLatestItem">
-                            <div className = "circleLatestItemContent">
-                                <div className="circleLatestComment">
-                                    <div className="latestIcon">
-                                        
-                                    </div>
-                                    <div className="latestNum">
-                                        3
-                                    </div>
-                                </div>
-                                <div className="circleLatestContent">
-                                    <div className ="circleLatestName">
-                                        asdasdasdasd
-                                    </div>
-                                    <div className ="circleLatestCBox">
-                                        <div className="circleLatestcLeft">
-                                            <img src= "//pic.cgyouxi.com/orange/upload/202012/79031351_730e30a97d622308c637df4271bbdbfd.jpg!n300" />
-                                        </div>
-                                        <div className="circleLatestcCenter">
-                                            asdasdhk
-                                        </div>
-                                        <div className="circleLatestcRight">
-                                            更新于2021-02-28
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className = "circleLatestImage">
-                                <img src = "//pic.cgyouxi.com/orange/title/1606757715_1823.gif!n600"/>
-                            </div>
-                        </div>
-                        <div className = "circleLatestItem">
-                            <div className = "circleLatestItemContent">
-                                <div className="circleLatestComment">
-                                    <div className="latestIcon">
-                                        
-                                    </div>
-                                    <div className="latestNum">
-                                        3
-                                    </div>
-                                </div>
-                                <div className="circleLatestContent">
-                                    <div className ="circleLatestName">
-                                        asdasdasdasd
-                                    </div>
-                                    <div className ="circleLatestCBox">
-                                        <div className="circleLatestcLeft">
-                                            <img src= "//pic.cgyouxi.com/orange/upload/202012/79031351_730e30a97d622308c637df4271bbdbfd.jpg!n300" />
-                                        </div>
-                                        <div className="circleLatestcCenter">
-                                            asdasdhk
-                                        </div>
-                                        <div className="circleLatestcRight">
-                                            更新于2021-02-28
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className = "circleLatestImage">
-                                <img src = "//pic.cgyouxi.com/orange/title/1606757715_1823.gif!n600"/>
-                            </div>
-                        </div>
-                        <div className = "circleLatestItem">
-                            <div className = "circleLatestItemContent">
-                                <div className="circleLatestComment">
-                                    <div className="latestIcon">
-                                        
-                                    </div>
-                                    <div className="latestNum">
-                                        3
-                                    </div>
-                                </div>
-                                <div className="circleLatestContent">
-                                    <div className ="circleLatestName">
-                                        asdasdasdasd
-                                    </div>
-                                    <div className ="circleLatestCBox">
-                                        <div className="circleLatestcLeft">
-                                            <img src= "//pic.cgyouxi.com/orange/upload/202012/79031351_730e30a97d622308c637df4271bbdbfd.jpg!n300" />
-                                        </div>
-                                        <div className="circleLatestcCenter">
-                                            asdasdhk
-                                        </div>
-                                        <div className="circleLatestcRight">
-                                            更新于2021-02-28
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className = "circleLatestImage">
-                                <img src = "//pic.cgyouxi.com/orange/title/1606757715_1823.gif!n600"/>
-                            </div>
-                        </div>
-                    </div>
-                    
+                    <Circle/>
                     
 
                 </PullToRefresh>
