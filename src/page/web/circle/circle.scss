@@ -1,0 +1,279 @@
+.circle {
+
+    .mineCircle {
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+        margin: 20px auto;
+        // background: white;
+        border-radius: 6px;
+        overflow: hidden;
+
+        .mineCircleTop {
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 6px;
+            padding-right: 6px;
+            box-sizing: border-box;
+
+            .mineCircleName {
+                color: #262626;
+                font-size: 16px;
+            }
+
+            .mineCircleMore {
+                font-size: 12px;
+            }
+        }
+
+        .mineCircleContent {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            // background: cadetblue;
+            background: linear-gradient(to bottom, #FFEEEE, #DDEFBB);
+            min-height: 150px;
+            text-align: left;
+            font-size: 0;
+
+            .mineCircleItemBox {
+                text-align: left;
+                margin-bottom: 10px;
+                display: inline-block;
+                vertical-align: middle;
+                width: 50%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 0;
+                padding-left: 20px;
+                box-sizing: border-box;
+                padding-right: 20px;
+
+                img {
+                    width: 24px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    border-radius: 6px;
+                }
+
+                span {
+                    color: #595959;
+                    height: 30px;
+                    line-height: 30px;
+                    overflow: hidden;
+                    max-width: 100px;
+                    margin-left: 6px;
+                    font-size: 13px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+    }
+
+    .mineCareful {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: white;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+
+        .mineCarefullyBox {
+            .mineCareTopBox {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .mineCareTopName {}
+
+                .mineCareTopMore {
+                    color: #8c8c8c;
+                    font-size: 12px;
+                }
+
+
+            }
+
+            .mineCareTopTips {
+                margin-top: 4px;
+                text-align: left;
+                font-size: 12px;
+                color: #8c8c8c;
+            }
+        }
+
+        .swiperContainer {
+            margin-top: 10px;
+            width: 100%;
+
+            .swiper-slide {
+                width: 100%;
+                position: relative;
+
+                .swiperImgBox {
+                    border-radius: 4px;
+                    display: block;
+                    width: 100%;
+                }
+
+                .swiperTitleBox {
+                    position: absolute;
+                    left: 50%;
+                    top: 95px;
+                    transform: translate(-50%, -50%);
+
+                    .swiperTitleName {
+                        font-size: 18px;
+                        color: #232526;
+                    }
+
+                    .swiperTitleBtn {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        background: #aaa;
+                        border-radius: 6px;
+                        font-size: 14px;
+                        height: 24px;
+                        line-height: 24px;
+                        margin-top: 10px;
+                        color: white;
+                    }
+                }
+
+                .swiperBottomBox {
+                    text-align: left;
+                    font-size: 0;
+                    margin-top: 10px;
+                    padding-left: 6px;
+
+                    .swiperBottomIcon {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 30px;
+
+                        img {
+                            display: block;
+                            width: 30px;
+                            border-radius: 4px;
+                            overflow: hidden;
+                        }
+                    }
+
+                    .swiperBottomContent {
+                        margin-left: 10px;
+                        display: inline-block;
+                        vertical-align: middle;
+
+                        .swiperBottomCName {
+                            letter-spacing: 0.2px;
+                            font-size: 12px;
+                            color: #595959;
+                        }
+
+                        .swiperBottomCNum {
+                            letter-spacing: 0.2px;
+                            font-size: 12px;
+                            color: #595959;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .circleLatestBox {
+        margin-top: 10px;
+        padding-top: 20px;
+        background: white;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+
+        .circleLatestItem {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: left;
+            height: 50px;
+
+            .circleLatestItemContent {
+                display: flex;
+                justify-content: left;
+
+                .circleLatestComment {
+                    padding-top: 3px;
+                    width: 20px;
+                    .latestIcon {
+                        width: 20px;
+                        height: 20px;
+                        background: url(../../../static/img/latestcomment.png);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                    }
+
+                    .latestNum {
+                        font-size: 12px;
+                        margin-top: 4px;
+
+                    }
+                }
+
+                .circleLatestContent {
+                    margin-left: 10px;
+                    width: 220px;
+                    text-align: left;
+                    .circleLatestName {
+                        height: 20px;
+                        line-height: 20px;
+                        color: #595959;
+                        font-size: 16px;
+                    }
+
+                    .circleLatestCBox {
+                        display: flex;
+                        justify-content: left;
+                        margin-top: 6px;
+                        height: 20px;
+                        line-height: 20px;
+                        .circleLatestcLeft {
+                            img {
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 4px;
+                            }
+                        }
+
+                        .circleLatestcCenter {
+                            
+                            margin-left: 10px;
+                            font-size: 12px;
+                        }
+
+                        .circleLatestcRight {
+                            font-size: 12px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+
+            .circleLatestImage {
+                margin-left: 10px;
+                img {
+                    border-radius: 4px;
+                    max-width: 80px;
+                    max-height: 45px;
+                    display: block;
+                }
+            }
+        }
+    }
+
+
+
+}

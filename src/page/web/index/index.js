@@ -7,7 +7,9 @@ import "./index.css";
 // const SideBar = lazy(() => import('../../../component/sidebar/sidebar'))
 const Home = lazy(() => import('../home/home'))
 const Detail = lazy(() => import('../detail/detail'))
+const Circle = lazy(() => import('../circle/circle'))
 
+console.log(Circle)
 // const Menu = lazy(() => import('../../../component/menu/menu'))
 // const Time = lazy(() => import('../time/time'))
 // const Category = lazy(() => import('../category/category'))
@@ -27,6 +29,7 @@ class App extends React.Component {
                     <Route path="/index" component={Home} />
                     <Route path="/index/:value" component={Home} />
                     <Route path="/detail/:value" component={Detail} />
+                    <Route path="/circle" component={Circle} />
                     {/* <Route path="/time" component={Time} />
                     <Route path="/category" component={Category} />
                     <Route path="/intro" component={Info} />
