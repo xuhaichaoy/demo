@@ -1,3 +1,37 @@
-body {
-    height: 100%;
+.manageCircle {
+
+    .createBtnBox {
+        // position: fixed;
+        // bottom: 0;
+        // left: 0;
+        width: 100%;
+        height: 50px;
+        .createBtn {
+            background: chocolate;
+            text-align: center;
+            font-size: 0;
+            height: 50px;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 6px;
+            line-height: 50px;
+            i{
+                display: inline-block;
+                vertical-align: middle;
+                width: 14px;
+                height: 14px;
+                background: url(../../../static/img/编_辑.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 16px;
+                color: white;
+                margin-left: 10px;
+            }
+        }
+    }
+    
 }

@@ -1,0 +1,113 @@
+.mine {
+    background: whitesmoke;
+    .mineTopBox {
+        background: url(//gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202001%2F29%2F20200129143349_QGRx3.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1617201175&t=57fa06f23b102c725e891ec811d02951) center top / auto 100% no-repeat;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        padding-top: 150px;
+
+        .mineTopBoxBtn {
+            position: absolute;
+            right: 6px;
+            top: 30px;
+            font-size: 0;
+            height: 20px;
+            line-height: 20px;
+
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 12px;
+                color: white;
+                height: 20px;
+            }
+            i {
+                margin-left: 3px;
+                display: inline-block;
+                vertical-align: middle;
+                background: url(../../../static/img/箭头.png);
+                width: 12px;
+                transform:rotate(90deg);
+                height: 12px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .mineTopUserContent {
+            
+            width: 100%;
+            height: 66px;
+            background-color:white;
+            border-radius: 100% 100% 0 0;
+            position: relative;
+            padding-top: 70px;
+            .mineUserBox {
+                position: absolute;
+                top: -50px;
+                left: 50%;
+                transform: translate(-50%, 0);
+               
+                img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                }
+    
+                .mineUserName {
+                    margin-top: 6px;
+                    font-size: 18px;
+                }
+            }
+    
+            .mineUserTips {
+                margin-top: 6px;
+                display: flex;
+                justify-content: center;
+                .mineUserItem {
+                    margin-left: 60px;
+                    i {
+                        font-style: normal;
+                        font-size: 13px;
+                        display: block;
+                    }
+                    span {
+                        margin-top: 4px;
+                        display: block;
+                        color: #8c8c8c;
+                        font-size: 13px;
+                    }
+                }
+
+                .mineUserItem:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        
+    }
+
+    .mineContent {
+
+        .am-list-header {
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+        .myMineItem{
+            .am-list-content {
+                font-size: 15px;
+            }
+           
+        }
+
+        .my-list1 {
+            .am-list-header {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

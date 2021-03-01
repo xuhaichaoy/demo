@@ -50,7 +50,8 @@ class TabExample extends React.Component {
        
     }
     componentDidMount() {
-        const hei = this.state.height - 87.5;
+        const hei = this.state.height - 44;
+        console.log(hei)
 
         setTimeout(() => this.setState({
             height: hei,
@@ -59,7 +60,7 @@ class TabExample extends React.Component {
     }
     render() {
         return (
-            <div className="allcircle">
+            <div className="manageCircle">
                 <PullToRefresh
                     damping={60}
                     ref={el => this.ptr = el}
@@ -85,8 +86,11 @@ class TabExample extends React.Component {
                     >
                         <div style={{ display: 'block', backgroundColor: '#fff' }}>
                             <CircleItem />
-                            <div>
-                                
+                            <div className="createBtnBox">
+                                <div className ="createBtn">
+                                    <i></i>
+                                    <span>创建圈子</span>
+                                </div>
                             </div>
                         </div>
                         <div style={{ display: 'block', backgroundColor: '#fff' }}>
