@@ -1,0 +1,89 @@
+body {
+    height: 100%;
+}
+
+.personal {
+    .personalTopBox {
+        background: url(https://pic.cgyouxi.com/orange/title/1612071289_9649.gif) center top / auto 100% no-repeat;
+        height: 240px;
+        width: 100%;
+        .personalTop {
+
+        }
+    }
+
+    .personalInfoBox {
+        position: relative;
+        .personalInfoImage {
+            position: absolute;
+            top: -30px;
+            left: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .personalInfoEditBtn {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 0;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #135200;
+            border-radius: 20px;
+            padding-left: 12px;
+            padding-right: 12px;
+            box-sizing: border-box;
+            i{
+                width: 14px;
+                height: 14px;
+                display: inline-block;
+                vertical-align: middle;
+                background: url(../../../static/img/编_辑1.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            span {
+                margin-left: 2px;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 12px;
+                height: 30px;
+                line-height: 30px;
+                color: #135200;
+            }
+        }
+
+        .personInfoUser{
+            text-align: left;
+            padding-top: 100px;
+            .personalName {
+                font-size: 0;
+                span {
+                    font-size: 20px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                i{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+
+            .personalSchool{
+
+            }
+        }
+
+        .personalWord{
+
+        }
+    }
+}
