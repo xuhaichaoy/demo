@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import "./index.css";
 
 // const SideBar = lazy(() => import('../../../component/sidebar/sidebar'))
+const HomePage = lazy(() => import('../HomePage/homepage'))
 const Home = lazy(() => import('../home/home'))
 const Detail = lazy(() => import('../detail/detail'))
 const Circle = lazy(() => import('../circle/circle'))
@@ -30,7 +31,7 @@ class App extends React.Component {
                 <Router>
 
                 <Switch>
-                    <Route path="/index" component={Home} />
+                    <Route path="/index" component={HomePage} />
                     <Route path="/index/:value" component={Home} />
                     <Route path="/detail/:value" component={Detail} />
                     <Route path="/circle" component={Circle} />
@@ -39,6 +40,7 @@ class App extends React.Component {
                     <Route path="/managecircle" component={ManageCircle} />
                     <Route path="/mine" component={Mine} />
                     <Route path="/personal" component={Personal} />
+                    <Redirect to = "/index"></Redirect>
 
                     {/* <Route path="/time" component={Time} />
                     <Route path="/category" component={Category} />
