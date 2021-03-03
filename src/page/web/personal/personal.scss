@@ -13,6 +13,8 @@ body {
     }
 
     .personalInfoBox {
+        background: white;
+        padding-bottom: 20px;
         position: relative;
         .personalInfoImage {
             position: absolute;
@@ -63,7 +65,9 @@ body {
 
         .personInfoUser{
             text-align: left;
-            padding-top: 100px;
+            padding-top: 50px;
+            padding-left: 16px;
+            padding-right: 16px;
             .personalName {
                 font-size: 0;
                 span {
@@ -72,18 +76,110 @@ body {
                     vertical-align: middle;
                 }
                 i{
+                    margin-left: 6px;
+                    width: 20px;
+                    height: 20px;
+                    background: url(../../../static/img/男.png);
+                    background-size: 100%;
+                    background-repeat: no-repeat;
                     display: inline-block;
                     vertical-align: middle;
                 }
             }
 
             .personalSchool{
-
+                margin-top: 8px;
+                font-size: 13px;
             }
         }
 
         .personalWord{
+            margin-top: 6px;
+            font-size: 12px;
+            text-align: left;
+            padding-left: 16px;
+            padding-right: 16px;
+            color: #8c8c8c;
+            line-height: 16px;
+        }
 
+        .mineUserTips {
+            margin-top: 26px;
+            display: flex;
+            justify-content: center;
+            .mineUserItem {
+                margin-left: 60px;
+                i {
+                    font-style: normal;
+                    font-size: 13px;
+                    display: block;
+                }
+                span {
+                    margin-top: 4px;
+                    display: block;
+                    color: #8c8c8c;
+                    font-size: 13px;
+                }
+            }
+
+            .mineUserItem:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    
+    .vistorRecordBox {
+        padding-top: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        margin-top: 10px;
+        background: white;
+        text-align: left;
+        .recordTitle {
+            font-size: 14px;
+        }
+
+        .recordBox {
+            margin-top: 12px;
+            text-align: left;
+            .recordItems {
+                margin-left: 10px;
+                display: inline-block;
+                vertical-align: middle;
+                text-align: center;
+                width: 66px;
+                img {
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                }
+
+                span {
+                    margin-top: 8px;
+                    display: block;
+                    font-size: 12px;
+                }
+            }
+
+            .recordItems:first-child, .recordItems:nth-child(6n) {
+                margin-left: 0;
+            }
+        }
+
+    }
+
+    .personalData {
+        margin-top: 10px;
+        .personalDataContent {
+            background: white;
+            display: flex;
+            min-height: 150px;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
