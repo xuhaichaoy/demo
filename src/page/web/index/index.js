@@ -41,7 +41,6 @@ class App extends React.Component {
                     {/* <Route path="/mine" component={Mine} /> */}
                     <Route path="/personal" component={Personal} />
                     <Redirect to = "/index"></Redirect>
-
                     {/* <Route path="/time" component={Time} />
                     <Route path="/category" component={Category} />
                     <Route path="/intro" component={Info} />
