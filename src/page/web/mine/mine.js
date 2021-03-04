@@ -10,24 +10,35 @@ import { List, SearchBar, Tabs, Button, WingBlank, WhiteSpace, Badge, PullToRefr
 
 const Item = List.Item;
 const Brief = Item.Brief;
-class TabExample extends React.Component {
+
+// const Anchor = lazy(() => import('../anchor/anchor'))
+// const { Meta } = Card;
+
+class MinePage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             data: [],
             disabled: false,
-        };
-       
-    }
+        }
+    };
+
     componentDidMount() {
 
-       
     }
+    componentWillReceiveProps(prevProps, prevState) {
+
+    }
+
+    personal = () => {
+        this.props.history.push("/personal");
+    }
+
     render() {
         return (
             <div className="mine">
                 <div className="mineTopBox">
-                    <div className="mineTopBoxBtn">
+                    <div className="mineTopBoxBtn" onClick={this.personal.bind(this)}>
                         <span>个人主页</span>
                         <i></i>
                     </div>
@@ -143,35 +154,6 @@ class TabExample extends React.Component {
                 
                 </div>
                 
-            </div>
-        )
-    }
-}
-
-
-
-// const Anchor = lazy(() => import('../anchor/anchor'))
-// const { Meta } = Card;
-
-class MinePage extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-
-        }
-    };
-
-    componentDidMount() {
-
-    }
-    componentWillReceiveProps(prevProps, prevState) {
-
-    }
-
-    render() {
-        return (
-            <div>
-                <TabExample />
             </div>
         );
     }

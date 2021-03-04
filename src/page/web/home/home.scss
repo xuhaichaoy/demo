@@ -46,6 +46,7 @@
                         img {
                             display: block;
                             width: 38px;
+                            height: 38px;
                             border-radius: 38px;
                         }
 
@@ -92,6 +93,7 @@
                         .cardContentImgItem {
                             border-radius: 8px;
                             max-width: 100px;
+                            max-height: 100px;
                             margin-right: 10px;
                         }
                         .cardContentImgItem:nth-child(3n){

@@ -9,7 +9,7 @@ import Circle from '../../../component/common/circle/circle';
 import "./circle.css";
 import "swiper/swiper-bundle.css"
 
-import { Button, WingBlank, WhiteSpace, Badge, PullToRefresh, Icon } from 'antd-mobile';
+import { PullToRefresh } from 'antd-mobile';
 
 
 
@@ -21,7 +21,7 @@ function genData() {
     return dataArr;
 }
 
-class TabExample extends React.Component {
+class CirclePage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -30,9 +30,9 @@ class TabExample extends React.Component {
             height: document.documentElement.clientHeight,
             data: [],
             newlist: [1,1,1,1,1,1,1],
-        };
-       
-    }
+        }
+    };
+
     componentDidMount() {
         const hei = this.state.height - 94;
 
@@ -50,6 +50,27 @@ class TabExample extends React.Component {
         });
 
     }
+
+    componentWillReceiveProps(prevProps, prevState) {
+
+    }
+
+    detail = () => {
+        console.log(111111111)
+        this.props.history.push("/circledetail/1");
+    }; 
+    
+    allCircle = () => {
+        console.log(111111111)
+        this.props.history.push("/allcircle");
+    }
+
+    manageCircle = () => {
+        console.log(111111111)
+        this.props.history.push("/managecircle");
+    }
+    
+
     render() {
         return (
             <div className="circle">
@@ -77,12 +98,12 @@ class TabExample extends React.Component {
                             <div className="mineCircleName">
                                 我的圈子
                             </div>
-                            <div className="mineCircleMore">
+                            <div className="mineCircleMore" onClick={this.manageCircle.bind(this)}>
                                 查看更多
                             </div>
                         </div>
                         <div className = "mineCircleContent">
-                            <div className = "mineCircleItemBox">
+                            <div className = "mineCircleItemBox" onClick={this.detail.bind(this)}>
                                 <img src = "//pic.cgyouxi.com/orange/upload/202102/79135432_724bf8b1a12cc605b504f9a34d4b2fbc.png!n300" />
                                 <span>建行卡圣诞开始</span>
                             </div>
@@ -112,7 +133,7 @@ class TabExample extends React.Component {
                                     精选推荐
                                 </div>
 
-                                <div className = "mineCareTopMore">
+                                <div className = "mineCareTopMore" onClick={this.allCircle.bind(this)}>
                                     查看更多
                                 </div>
                             </div>
@@ -162,35 +183,6 @@ class TabExample extends React.Component {
 
                 </PullToRefresh>
                 
-            </div>
-        )
-    }
-}
-
-
-
-// const Anchor = lazy(() => import('../anchor/anchor'))
-// const { Meta } = Card;
-
-class CirclePage extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-
-        }
-    };
-
-    componentDidMount() {
-
-    }
-    componentWillReceiveProps(prevProps, prevState) {
-
-    }
-
-    render() {
-        return (
-            <div>
-                <TabExample />
             </div>
         );
     }
