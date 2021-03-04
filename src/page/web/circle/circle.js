@@ -135,9 +135,9 @@ class TabExample extends React.Component {
                         </div>
                         <div className="swiper-container swiperContainer">
                             <div className="swiper-wrapper">
-                                {this.state.newlist.map((item) => {
+                                {this.state.newlist.map((item, index) => {
                                 return (
-                                    <div className="swiper-slide" key={item}>
+                                    <div className="swiper-slide" key={index}>
                                         <img
                                             className="swiperImgBox"
                                             src="//pic.cgyouxi.com/orange/title/1606757715_1823.gif!n600"
@@ -185,7 +185,7 @@ class TabExample extends React.Component {
 // const Anchor = lazy(() => import('../anchor/anchor'))
 // const { Meta } = Card;
 
-class App extends React.Component {
+class CirclePage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -210,4 +210,4 @@ class App extends React.Component {
     }
 }
 
-export default withRouter(App);
+export default (CirclePage);

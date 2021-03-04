@@ -32,13 +32,13 @@ class App extends React.Component {
 
                 <Switch>
                     <Route path="/index" component={HomePage} />
-                    <Route path="/index/:value" component={Home} />
+                    {/* <Route path="/index/:value" component={Home} /> */}
                     <Route path="/detail/:value" component={Detail} />
                     <Route path="/circle" component={Circle} />
                     <Route path="/circledetail/:value" component={CircleDetail} />
                     <Route path="/allcircle" component={AllCircle} />
                     <Route path="/managecircle" component={ManageCircle} />
-                    <Route path="/mine" component={Mine} />
+                    {/* <Route path="/mine" component={Mine} /> */}
                     <Route path="/personal" component={Personal} />
                     <Redirect to = "/index"></Redirect>
 

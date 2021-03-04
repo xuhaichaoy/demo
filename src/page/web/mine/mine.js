@@ -153,7 +153,7 @@ class TabExample extends React.Component {
 // const Anchor = lazy(() => import('../anchor/anchor'))
 // const { Meta } = Card;
 
-class App extends React.Component {
+class MinePage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -177,4 +177,4 @@ class App extends React.Component {
     }
 }
 
-export default withRouter(App);
+export default (MinePage);

@@ -42,11 +42,11 @@
 
 .mine .mineTopBox .mineTopUserContent {
   width: 100%;
-  height: 66px;
   background-color: white;
   border-radius: 100% 100% 0 0;
   position: relative;
   padding-top: 70px;
+  padding-bottom: 20px;
 }
 
 .mine .mineTopBox .mineTopUserContent .mineUserBox {
