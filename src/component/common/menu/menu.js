@@ -148,6 +148,6 @@ class TabBarExample extends React.Component {
         </div>
       );
     }
-  }
-  
-  ReactDOM.render(<TabBarExample />, mountNode);
+}
+
+ReactDOM.render(<TabBarExample />, mountNode);

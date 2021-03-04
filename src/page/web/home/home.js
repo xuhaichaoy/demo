@@ -1,33 +1,15 @@
 import React from "react";
 import lazy from '../../../config/lazy'
 import ReactDOM from 'react-dom';
-import { withRouter } from "react-router-dom";
 // import api from '../../config/http';
 // import { DatePicker } from 'antd-mobile';
 import "./home.css";
 
-import { SearchBar, Button, WingBlank, Tabs, WhiteSpace, Badge, PullToRefresh, Icon } from 'antd-mobile';
-
-
-class Search extends React.Component {
-  state = {
-    value: '美食',
-  };
-  componentDidMount() {
-  }
-
-  render() {
-    return (<div>
-      <SearchBar placeholder="Search" maxLength={8} />
-    </div>);
-  }
-}
-
+import { Tabs, Badge, PullToRefresh, Icon } from 'antd-mobile';
 
 const tabs = [
   { title: <Badge>关注</Badge> },
   { title: <Badge>推荐</Badge> },
-  //   { title: <Badge dot>Third Tab</Badge> },
 ];
 
 function genData() {
@@ -37,8 +19,7 @@ function genData() {
   }
   return dataArr;
 }
-
-class TabExample extends React.Component {
+class HomePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -46,10 +27,11 @@ class TabExample extends React.Component {
       down: true,
       height: document.documentElement.clientHeight,
       data: [],
-    };
-  }
+    }
+  };
+
   componentDidMount() {
-    const hei = this.state.height - 87.5;
+    const hei = this.state.height - 137.5;
 
     console.log(hei, ReactDOM.findDOMNode(this.ptr).offsetTop, ReactDOM.findDOMNode(this.ptr))
     setTimeout(() => this.setState({
@@ -58,6 +40,18 @@ class TabExample extends React.Component {
     }), 0);
 
   }
+
+  componentWillReceiveProps(prevProps, prevState) {
+
+  }
+
+
+  detail = (i) => {
+    console.log(i)
+    console.log(this.props)
+    this.props.history.push("/detail/" + i);
+  };  
+
   render() {
     return (
       <div className="tabsIndex">
@@ -142,7 +136,7 @@ class TabExample extends React.Component {
             >
               <div className="cardBox">
                 {this.state.data.map(i => (
-                  <div key={i} className="cardItem">
+                  <div key={i} className="cardItem" onClick={this.detail.bind(this, i)}>
                     <div className="cardTopBox">
                       <div className="cardImg">
                         <img src="//wcdn1.cgyouxi.com/avatar/55865771_1594108289_middle.jpg" />
@@ -193,36 +187,6 @@ class TabExample extends React.Component {
             </PullToRefresh>
           </div>
         </Tabs>
-      </div>
-    )
-  }
-}
-
-
-
-// const Anchor = lazy(() => import('../anchor/anchor'))
-// const { Meta } = Card;
-
-class HomePage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
-  };
-
-  componentDidMount() {
-
-  }
-  componentWillReceiveProps(prevProps, prevState) {
-
-  }
-
-  render() {
-    return (
-      <div>
-        <Search />
-        <TabExample />
       </div>
     );
   }

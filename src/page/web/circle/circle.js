@@ -9,22 +9,9 @@ import Circle from '../../../component/common/circle/circle';
 import "./circle.css";
 import "swiper/swiper-bundle.css"
 
-import { SearchBar, Button, WingBlank, WhiteSpace, Badge, PullToRefresh, Icon } from 'antd-mobile';
+import { Button, WingBlank, WhiteSpace, Badge, PullToRefresh, Icon } from 'antd-mobile';
 
 
-class Search extends React.Component {
-    state = {
-        value: '美食',
-    };
-    componentDidMount() {
-    }
-
-    render() {
-        return (<div>
-            <SearchBar placeholder="Search" maxLength={8} />
-        </div>);
-    }
-}
 
 function genData() {
     const dataArr = [];
@@ -47,7 +34,7 @@ class TabExample extends React.Component {
        
     }
     componentDidMount() {
-        const hei = this.state.height - 87.5;
+        const hei = this.state.height - 94;
 
         setTimeout(() => this.setState({
             height: hei,
@@ -203,7 +190,6 @@ class CirclePage extends React.Component {
     render() {
         return (
             <div>
-                <Search />
                 <TabExample />
             </div>
         );

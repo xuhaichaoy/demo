@@ -18,45 +18,6 @@ const tabs = [
     { title: <Badge>收藏</Badge> },
 ];
 
-class TabExample extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            refreshing: false,
-            down: true,
-            height: document.documentElement.clientHeight,
-            data: [],
-        };
-    }
-    componentDidMount() {
-
-    }
-
-    render() {
-        return (
-            <Tabs tabs={tabs}
-                initialPage={1}
-                onChange={(tab, index) => { console.log('onChange', index, tab); }}
-                onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
-            >
-                <div style={{ display: 'block', backgroundColor: '#fff' }}>
-                    <Comment />
-                </div>
-                <div style={{ display: 'block', backgroundColor: '#fff' }}>
-                    <Like />
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                    Content of third tab
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                    Content of fourth tab
-                </div>
-            </Tabs>
-        )
-    }
-}
-
-
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -82,6 +43,10 @@ class App extends React.Component {
 
     };
 
+    returnBack = (e) => {
+        this.props.history.push("/index");
+    };
+
     cancelInput = (e) => {
         if (e.target.getAttribute('maxlength')) {
             return
@@ -100,7 +65,7 @@ class App extends React.Component {
                         className="detailNavBar"
                         mode="light"
                         icon={<Icon type="left" />}
-                        onLeftClick={() => console.log('onLeftClick')}
+                        onLeftClick={this.returnBack}
                         rightContent={[
                             <span key="0" style={{ marginRight: '16px' }}>关注</span>,
                             // <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
@@ -139,7 +104,24 @@ class App extends React.Component {
                         </div>
                     </div>
                     <WhiteSpace />
-                    <TabExample />
+                    <Tabs tabs={tabs}
+                        initialPage={0}
+                        onChange={(tab, index) => { console.log('onChange', index, tab); }}
+                        onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
+                    >
+                        <div style={{ display: 'block', backgroundColor: '#fff' }}>
+                            <Comment />
+                        </div>
+                        <div style={{ display: 'block', backgroundColor: '#fff' }}>
+                            <Like />
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                            Content of third tab
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
+                            Content of fourth tab
+                        </div>
+                    </Tabs>
                     {/* <WhiteSpace /> */}
                     <div className="bottomTipsHidden">
                     </div>

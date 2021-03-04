@@ -5,6 +5,7 @@
   padding-left: 16px;
   padding-right: 16px;
   box-sizing: border-box;
+  padding-bottom: 10px;
 }
 
 .circleLatestBox .circleLatestItem {
