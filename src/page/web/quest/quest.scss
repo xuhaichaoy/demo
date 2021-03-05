@@ -1,0 +1,219 @@
+body {
+    height: 100%;
+}
+
+.questionBox {
+   
+
+    .hotQuestBox {
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 20px;
+        .hotQuestTitle {
+            display: flex;
+            justify-content: space-between;
+            height: 18px;
+            line-height: 18px;
+            .hotQuestLeft {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .hotQuestRight {
+                font-size: 14px;
+            }
+        }
+
+        .hotItemBox {
+            margin-top: 20px;
+            .hotItemBoxTitle {
+                display: flex;
+                justify-content: space-between;
+
+                .hotItemLeft {
+                    font-size: 0;
+                    .hotItemIcon {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 16px;
+                        height: 16px;
+                        background: url(../../../static/img/编_辑.png);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                    }
+
+                    .hotItemMiddle {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 14px;
+                        margin-left: 6px;
+                    }
+                }
+           
+
+                .hotItemRight {
+                    background: url(../../../static/img/更_多.png);
+                    width: 14px;
+                    height: 14px;
+                    background-size: 100%;
+                }
+            }
+
+            .hotItemBoxContent {
+                margin-top: 8px;
+                background: white;
+                text-align: left;
+                padding: 8px;
+                box-sizing: border-box;
+                border-radius: 6px;
+
+                .hotAnswerBox {
+                    font-size: 0;
+                    color: #8c8c8c;
+                    height: 14px;
+                    line-height: 14px;
+
+                    span {
+                        font-size: 12px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+
+                    i {
+                        font-size: 12px;
+                        margin-left: 6px;
+                        font-style: normal;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+
+                .hotAnswerFirst {
+                    margin-top: 6px;
+                    display: flex;
+                    justify-content: left;
+                    .hotUser {
+                        color: #389e0d;
+                        font-size: 12px;
+                    }
+                    
+                    .hotContent {
+                        margin-left: 4px;
+                        color: #8c8c8c;
+                        font-size: 12px;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    .newQuestBox {
+        padding-left: 16px;
+        padding-right: 16px;
+        background: white;
+        padding-top: 10px;
+        text-align: left;
+        .newQuestBoxTitle {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .newItemBox {
+            padding-bottom: 20px;
+            margin-top: 10px;
+            border-bottom: .5px solid #bfbfbf;
+            .newItemTopBox {
+                display: flex;
+                justify-content: space-between;
+                .newItemTitle {
+                    font-size: 14px;
+                }
+                .newItemIcon {
+                    background: url(../../../static/img/更_多.png);
+                    width: 14px;
+                    height: 14px;
+                    background-size: 100%;
+
+                }
+            }
+
+            .newAnswerNumBox{
+                font-size: 0;
+                color: #8c8c8c;
+                margin-top: 8px;
+                span {
+                    font-size: 12px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                i {
+                    margin-left: 6px;
+                    font-size: 12px;
+                    font-style: normal;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+
+            .newUserBox {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                margin-top: 8px;
+                height: 14px;
+                line-height: 14px;
+
+                .newUserBoxLeft {
+                    font-size: 0;
+                    .newUserImg {
+                        display: inline-block;
+                        vertical-align: middle;
+                        img {
+                            display: block;
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                        }
+                    }
+    
+                    .newUserName {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 12px;
+                        margin-left: 4px;
+                        color: #389e0d;
+                    }
+    
+                    .newUserContent {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 12px;
+                        margin-left: 4px;
+                        color: #8c8c8c;
+                    }
+                }
+
+                .newUserBoxRight {
+                    .newUserTime {
+                        font-size: 12px;
+                        margin-left: 4px;
+                        color: #8c8c8c;
+                    }
+                }
+                
+
+                
+            }
+        }
+
+        .newItemBox:last-child {
+            border-bottom: .5px solid transparent;
+        }
+    }
+}

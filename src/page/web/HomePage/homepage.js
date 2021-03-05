@@ -11,6 +11,7 @@ const Home = lazy(() => import('../home/home'))
 // const Detail = lazy(() => import('../detail/detail'))
 const Circle = lazy(() => import('../circle/circle'))
 const Mine = lazy(() => import('../mine/mine'))
+const Quest = lazy(() => import('../quest/quest'))
 const Search = lazy(() => import('../../../component/common/search/search'))
 
 
@@ -19,7 +20,7 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-          selectedTab: 'home',
+          selectedTab: 'answer',
           hidden: false,
           fullScreen: false,
           scrollHeight: 'calc(100vh - 44px)'
@@ -162,7 +163,7 @@ class App extends React.Component {
                   });
                 }}
               >
-                {this.renderContent('Friend')}
+                <Quest history={this.props.history}/>
               </TabBar.Item>
               <TabBar.Item
                 icon={{ uri: 'https://zos.alipayobjects.com/rmsportal/asJMfBrNqpMMlVpeInPQ.svg' }}
