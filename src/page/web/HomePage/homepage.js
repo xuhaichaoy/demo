@@ -13,6 +13,7 @@ const Circle = lazy(() => import('../circle/circle'))
 const Mine = lazy(() => import('../mine/mine'))
 const Quest = lazy(() => import('../quest/quest'))
 const Search = lazy(() => import('../../../component/common/search/search'))
+const Message = lazy(() => import('../../../component/common/message/message'))
 
 
 
@@ -20,7 +21,7 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-          selectedTab: 'answer',
+          selectedTab: 'home',
           hidden: false,
           fullScreen: false,
           scrollHeight: 'calc(100vh - 44px)'
@@ -65,6 +66,7 @@ class App extends React.Component {
   render() {
     let SearchDom = ''
     let scrollHeight = this.state.scrollHeight
+    let CanMessage = ''
     if(this.state.selectedTab !== 'mine') {
       SearchDom = (
         <Search history={this.props.history}/>
@@ -72,6 +74,13 @@ class App extends React.Component {
       scrollHeight = 'calc(100vh - 44px)'
     }else {
       scrollHeight = 'calc(100vh)'
+    }
+
+    if(this.state.selectedTab === 'home' || this.state.selectedTab === 'answer') {
+      // Message
+      CanMessage = (
+        <Message history={this.props.history}/>
+      )
     }
     return (
         <div>
@@ -181,6 +190,8 @@ class App extends React.Component {
               </TabBar.Item>
             </TabBar>
           </div>
+
+          {CanMessage}
     
         </div>
     );
