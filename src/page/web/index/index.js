@@ -14,6 +14,7 @@ const AllCircle = lazy(() => import('../allcircle/allcircle'))
 const ManageCircle = lazy(() => import('../managecircle/managecircle'))
 const Mine = lazy(() => import('../mine/mine'))
 const Personal = lazy(() => import('../personal/personal'))
+const Send = lazy(() => import('../sendMessage/sendmessage'))
 
 // const Menu = lazy(() => import('../../../component/menu/menu'))
 // const Time = lazy(() => import('../time/time'))
@@ -40,6 +41,7 @@ class App extends React.Component {
                     <Route path="/managecircle" component={ManageCircle} />
                     {/* <Route path="/mine" component={Mine} /> */}
                     <Route path="/personal" component={Personal} />
+                    <Route path="/send" component={Send} />
                     <Redirect to = "/index"></Redirect>
                     {/* <Route path="/time" component={Time} />
                     <Route path="/category" component={Category} />

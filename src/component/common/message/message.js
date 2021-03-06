@@ -1,5 +1,5 @@
 import React from "react";
-import { Drawer, List, NavBar, Icon } from 'antd-mobile';
+import { Drawer } from 'antd-mobile';
 import "./message.css";
 
 class Message extends React.Component {
@@ -31,19 +31,26 @@ class Message extends React.Component {
        
     }
     render() {
-        const sidebar = (<List>
-            {[0, 1, 2, 3].map((i, index) => {
-              if (index === 0) {
-                return (<List.Item key={index}
-                  thumb="https://zos.alipayobjects.com/rmsportal/eOZidTabPoEbPeU.png"
-                  multipleLine
-                >Category</List.Item>);
-              }
-              return (<List.Item key={index}
-                thumb="https://zos.alipayobjects.com/rmsportal/eOZidTabPoEbPeU.png"
-              >Category{index}</List.Item>);
-            })}
-          </List>);
+        const sidebar = (
+            <div className = "messageItemBox">
+                <div className = "messageItem">
+                    <div className = "messageIcons">
+                        
+                    </div>
+                    <div className = "messageTitle">
+                        说说
+                    </div>
+                </div>
+                <div className = "messageItem">
+                    <div className = "messageIcons">
+                        
+                    </div>
+                    <div className = "messageTitle">
+                        问问
+                    </div>
+                </div>
+            </div>
+        );
         let drawerDom = ''
         if(this.state.show) {
             drawerDom = (

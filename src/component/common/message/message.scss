@@ -37,3 +37,33 @@
         padding: 0;
     }
 }
+
+.messageItemBox {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    .messageItem {
+      
+        margin-left: 100px;
+
+        .messageIcons {
+            width: 30px;
+            height: 30px;
+            background: url(../../../static/img/编_辑1.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+
+        }
+
+        .messageTitle {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #434343;
+        }
+    }
+
+    .messageItem:first-child {
+        margin-left: 0;
+    }
+}
