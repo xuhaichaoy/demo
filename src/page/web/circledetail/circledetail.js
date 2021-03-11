@@ -41,6 +41,10 @@ class App extends React.Component {
 
     }
 
+    back = () => {
+        this.props.history.push("/index");
+    }
+
     render() {
         return (
             <div>
@@ -63,8 +67,11 @@ class App extends React.Component {
                                 this.setState({ refreshing: false });
                             }, 1000);
                         }}
-                    >
+                    > 
+                        
                         <div className="CircleDetail">
+                            <div className = "returnBtn" onClick={this.back.bind(this)}>
+                            </div>
                             <div className="detailBanner">
                                 <div className="bannerShortIcon">
                                     <img src = "//pic.cgyouxi.com/orange/upload/202102/79135432_724bf8b1a12cc605b504f9a34d4b2fbc.png!n300" />

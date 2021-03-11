@@ -32,10 +32,17 @@ class TabExample extends React.Component {
 
        
     }
+
+    back = () => {
+        this.props.history.push("/index");
+    }
+
     render() {
         const tabs = this.state.tabsData
         return (
             <div className="personal">
+                <div className = "returnBtn" onClick={this.back.bind(this)}>
+                </div>
                 <div className ="personalTopBox">
                     <div className ="personalTop">
                         
@@ -157,7 +164,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <TabExample />
+                <TabExample history={this.props.history}/>
             </div>
         );
     }

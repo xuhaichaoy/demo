@@ -1,6 +1,23 @@
+@charset "UTF-8";
 .CircleDetail {
   background: white;
   padding-bottom: 20px;
+  position: relative;
+}
+
+.CircleDetail .returnBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../../../static/img/返_回.png);
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  left: 16px;
+  top: 10px;
+  z-index: 90;
 }
 
 .CircleDetail .detailBanner {
